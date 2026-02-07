@@ -1,0 +1,40 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Code Crunchers Technologies</title>
+  <meta name="description" content="Web, tooling, and systems — built with clarity and care." />
+  <link rel="stylesheet" href="theme.css" />
+</head>
+<body>
+  <header class="wrap">
+    <h1>Code Crunchers Technologies</h1>
+    <p class="tagline">Web • Tools • Systems</p>
+  </header>
+
+  <main class="wrap">
+    <section class="card">
+      <h2>What we build</h2>
+      <ul>
+        <li>Web apps & tooling</li>
+        <li>Infrastructure helpers</li>
+        <li>Clean UI foundations (Spectra)</li>
+      </ul>
+    </section>
+
+    <section class="card">
+      <h2>Contact</h2>
+      <p>Email: <span class="muted">add later</span></p>
+    </section>
+  </main>
+
+  <footer class="wrap muted">
+    <p>© <span id="y"></span> Code Crunchers Technologies</p>
+  </footer>
+
+  <script>
+    document.getElementById('y').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
