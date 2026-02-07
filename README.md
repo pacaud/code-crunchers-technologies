@@ -1,6 +1,11 @@
 # Code Crunchers Technologies
 
-Public-facing website + brand repo for Code Crunchers Technologies (CCT).
+Public-facing website + brand repo for **Code Crunchers Technologies (CCT)**.
+
+**In the larger setup:**
+- `codecruncherstechnologies.com` = the play (services/portfolio)
+- `spectraportal.dev` = the equipment (design system + tooling)
+- `hollowverse.studio` = the stage (curated studio presence)
 
 ## What this repo is for
 - Marketing site / portfolio
