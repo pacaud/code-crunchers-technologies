@@ -1,30 +1,30 @@
 ﻿# POINTERS — Code Crunchers Technologies
 
+repo: https://github.com/pacaud/code-crunchers-technologies
 default_branch: main
-repo: https://github.com/<OWNER>/code-crunchers-technologies
 
-## How Voxia should resolve “open/display <file>”
-- HTML needs `source_mirror` to guarantee verbatim source display.
-- CSS/JS/MD can usually use `raw_url`.
+## Resolver rules (Voxia)
+- To display code as plain text in chat, use `raw_mirror_url`
+- `source/` is the chat-safe mirror folder
 
-## Current (exists today)
+## Mirrors (chat-safe)
+
+- id: site_home_mirror
+  runtime: index.html
+  source_mirror: source/index.html.txt
+  raw_mirror_url: https://raw.githubusercontent.com/pacaud/code-crunchers-technologies/main/source/index.html.txt
+
+- id: site_theme_mirror
+  runtime: theme.css
+  source_mirror: source/theme.css.txt
+  raw_mirror_url: https://raw.githubusercontent.com/pacaud/code-crunchers-technologies/main/source/theme.css.txt
+
+## Meta
+
+- id: pointers
+  runtime: POINTERS.md
+  raw_url: https://raw.githubusercontent.com/pacaud/code-crunchers-technologies/main/POINTERS.md
 
 - id: readme
   runtime: README.md
-  raw_url: https://raw.githubusercontent.com/<OWNER>/code-crunchers-technologies/main/README.md
-
-## Future site (enable when these files exist)
-
-# - id: site_home
-#   runtime: index.html
-#   source_mirror: source/index.html.txt
-#   raw_url: https://raw.githubusercontent.com/<OWNER>/code-crunchers-technologies/main/index.html
-#
-# - id: site_theme
-#   runtime: theme.css
-#   source_mirror: source/theme.css.txt
-#   raw_url: https://raw.githubusercontent.com/<OWNER>/code-crunchers-technologies/main/theme.css
-
-## Notes
-- `source/` is reserved for chat-safe mirrors.
-- When you create `index.html`, immediately copy it to `source/index.html.txt`.
+  raw_url: https://raw.githubusercontent.com/pacaud/code-crunchers-technologies/main/README.md
